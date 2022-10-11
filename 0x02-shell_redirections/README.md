@@ -1,2 +1,1 @@
-#!/bin/bash
 Readme.md
