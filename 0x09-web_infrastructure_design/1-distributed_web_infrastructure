@@ -1,0 +1,16 @@
+
+
+For every additional element, why you are adding it:
+As mentioned earlier, this infrastructure has some limitations that can be addressed by adding additional servers and load balancers as needed. For example, if there is a high volume of traffic to the website, additional servers can be added to distribute the traffic and provide redundancy in case of a server failure. Additionally, a load balancer can be added to distribute traffic across multiple servers and ensure that traffic is directed to servers that have the capacity to handle it.
+
+What distribution algorithm your load balancer is configured with and how it works:
+The distribution algorithm used by the load balancer depends on the specific requirements of the website and the infrastructure. There are several algorithms available, such as round-robin, least connections, IP hash, and more. Round-robin is a simple algorithm that distributes requests evenly across all available servers in a circular fashion. Least connections is an algorithm that routes requests to the server with the least number of active connections. IP hash is an algorithm that uses the client's IP address to determine which server to send the request to. The load balancer can be configured with the appropriate algorithm based on the requirements of the website and the infrastructure.
+
+Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both:
+An active-active setup involves multiple servers that are all actively serving requests at the same time, while an active-passive setup involves multiple servers where only one is actively serving requests while the others are on standby. In an active-active setup, traffic is distributed across all active servers, providing higher availability and redundancy in case of a server failure. In an active-passive setup, one server is designated as the active server, while the others are in standby mode, ready to take over in case the active server fails. This setup provides redundancy, but may result in some downtime during a failover event.
+
+How a database Primary-Replica (Master-Slave) cluster works:
+A primary-replica (or master-slave) database cluster involves a primary database node that is responsible for handling all read and write requests, and one or more replica nodes that replicate the data from the primary node. The replica nodes are used to handle read-only queries, and can also be used as a backup in case the primary node fails. When a write query is executed on the primary node, the change is replicated to all replica nodes, ensuring that they have the most up-to-date data.
+
+What is the difference between the Primary node and the Replica node in regard to the application:
+In terms of the application, the primary node is responsible for handling all read and write queries, while the replica nodes are only used to handle read-only queries. This means that any data updates or modifications must be executed on the primary node, while the replica nodes can be used to serve read-only queries, reducing the load on the primary node and improving performance. Additionally, in the event of a failure of the primary node, the replica nodes can be promoted to become the new primary node, ensuring continuity of service.
