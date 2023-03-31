@@ -1,0 +1,7 @@
+A server is a computer system that is used to provide a service or resource to other computers or devices on a network.
+A domain name is used to identify a website on the internet.
+The www in www.foobar.com is a subdomain of the domain name foobar.com. The DNS record type that is used to associate the www subdomain with the IP address of the server is called a CNAME record. A CNAME record maps the subdomain to the canonical domain name of the server, which in this case is foobar.com.
+The web server is responsible for receiving requests from clients (such as web browsers) and serving web content in response.
+The application server is responsible for executing the business logic and generating dynamic content for the website. 
+The database is responsible for storing and managing the data that is used by the application server. 
+The server communicates with the client's computer over the internet using the HTTP (Hypertext Transfer Protocol) protocol. When a client sends a request to the server, it includes a URL (Uniform Resource Locator) that identifies the resource that it is requesting, such as a particular web page or image. The server responds to the request with an HTTP response that includes the requested resource, which is sent back to the client's browser.
