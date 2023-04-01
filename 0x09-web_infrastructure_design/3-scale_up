@@ -1,0 +1,29 @@
+https://docs.google.com/document/d/18pQQf1S8ILyi8oMjtABwLVsobVP25vBssOoBzo2Lgco/edit?usp=sharing
+
+An application server and a web server are two different types of servers that are designed to perform different tasks.
+A web server is designed to serve web pages or files requested by clients such as web browsers.
+A web server typically uses the HTTP protocol to receive requests from clients and send responses back.
+A web server is also responsible for processing HTML, CSS, and JavaScript files, and for providing access to other web-based resources such as images, videos, and documents.
+
+An application server, on the other hand, is designed to provide more complex services than a web server.
+An application server is typically used to build and host applications that can be accessed over the network.
+It can also provide access to databases, handle transactions, and provide a platform for developers to develop applications.
+
+To build a reliable and secure infrastructure for web and application server hosting, you will need to add the following components:
+
+1. Two web servers: Web servers are responsible for serving web pages or files requested by clients.
+By adding two web servers, you can ensure that the web server will be able to handle a large number of requests without any disruption.
+
+2. Two application servers: Application servers are designed to provide more complex services than web servers.
+By adding two application servers, you can ensure that the application server will be able to handle a large number of requests without any disruption.
+
+3. A load balancer: A load balancer is used to distribute the incoming requests between the web and application servers.
+This ensures that the web and application servers are not overwhelmed by the requests.
+The load balancer also provides redundancy in case one of the web or application servers fails.
+
+4. A database server: A database server is used to store data that is used by the web and application servers.
+By adding a database server, you can ensure that the data is stored securely and is accessible to both the web and application servers.
+
+By adding the above components, you can ensure that the web and application servers can handle a large number of requests without any disruption.
+Moreover, the load balancer provides redundancy in case one of the web or application servers fails.
+Additionally, the database server ensures that the data is stored securely and is accessible to both the web and application servers.

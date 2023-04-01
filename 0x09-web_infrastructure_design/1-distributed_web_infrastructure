@@ -1,4 +1,4 @@
-
+https://docs.google.com/document/d/1RO5QTQuzUZwz2vQSEycT-Vtq7TNkFtmyYmY6IdrA0_U/edit?usp=sharing
 
 For every additional element, why you are adding it:
 As mentioned earlier, this infrastructure has some limitations that can be addressed by adding additional servers and load balancers as needed. For example, if there is a high volume of traffic to the website, additional servers can be added to distribute the traffic and provide redundancy in case of a server failure. Additionally, a load balancer can be added to distribute traffic across multiple servers and ensure that traffic is directed to servers that have the capacity to handle it.

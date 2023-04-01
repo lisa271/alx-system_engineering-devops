@@ -1,0 +1,24 @@
+https://docs.google.com/document/d/1DfZsNwm5Vtr8d6-SZRKjjV2RKdNjvPHbAJEXvs0uXLY/edit?usp=sharing
+
+This web infrastructure consists of 3 web servers, 3 firewalls, 1 SSL certificate, and 3 monitoring clients. 
+
+The web servers are responsible for hosting the website www.foobar.com, serving encrypted traffic, and being monitored. 
+
+The 3 firewalls are added for security purposes, to protect the web servers from malicious traffic and unauthorized access.
+
+The SSL certificate is used to serve www.foobar.com over HTTPS, meaning that all traffic to and from the website is encrypted. This is important for security and privacy reasons.
+
+The 3 monitoring clients are used to collect data from the web servers, which can then be used to monitor the performance and activity of the website.
+This data can be used to identify any issues with the website and make necessary changes.
+
+If you want to monitor your web server's QPS, you can use the monitoring clients to collect data on the request rate, response time, and other metrics.
+This data can then be used to identify any issues with the website, such as slow response times or high request rates.
+
+One issue with this infrastructure is that terminating SSL at the load balancer level is not secure. This means that the traffic is not completely encrypted as it is being sent to the web servers.
+To ensure that the traffic is completely secure, SSL should be terminated at the web server level.
+
+Another issue with this infrastructure is that there is only one MySQL server capable of accepting writes. This means that if the server fails, the website will not be able to accept any data or transactions.
+To prevent this, it is recommended to have at least two MySQL servers capable of accepting writes.
+
+Finally, having servers with all the same components (database, web server and application server) might be a problem. If a single component fails, it could cause the website to go down.
+It is recommended to have multiple servers with different components, so if one fails, the website will still be operational.
